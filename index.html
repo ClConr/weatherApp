@@ -1,0 +1,37 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script type="module" src="main.js"></script>
+    <link rel="stylesheet" type="text/css" href="semantic.min.css">
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.min.js"
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin="anonymous"></script>
+    <script src="semantic/dist/semantic.min.js"></script>
+  </head>
+  <body>
+    <div id="container">
+      <h2>Weather App</h2>
+      <input type="text" id="search" placeholder="Enter a city, state">
+      <div>
+        <button>Search</button>
+        <button id="clear">Clear</button>
+      </div>
+      <img id="icon" src="" alt="">
+
+      <div id="temp-div"></div>
+
+      <div id="weather"></div>
+
+      <div id="forecast"></div> 
+      
+    </div>
+    
+  </body>
+</html>
