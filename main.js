@@ -11,8 +11,9 @@ export function getWeather() {
   const apiKey = '5b09592ff185ae2c9f875f9435567ac3';
 
   // get location from input
-  const input = document.getElementById('search').value;
-  const [city, state] = input.split(',').map(part => part.trim()); // part.trim removes any whitespace
+  const city = document.getElementById('search').value;
+  const state = document.getElementById('states').value;
+  // part.trim removes any whitespace
 
   if (!city) {
     alert('City does not exist. Please try again.');
@@ -114,4 +115,5 @@ function clearDisplay() {
   tempDiv.innerHTML = '';
   weatherIcon.style.display = 'none';
   document.getElementById('search').value = '';
+  document.getElementById('states').value = '';
 }
